@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nocthémar — Codex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="embers"></canvas>
+<div class="orb orb-white"></div>
+<div class="orb orb-white-2"></div>
+<div class="orb orb-red"></div>
+
+<header class="topbar">
+  <a class="brand" href="index.html">Nocthémar</a>
+  <span class="brand-sub">Codex de l'univers JDR</span>
+</header>
+
+<main>
+
+  <div class="hero">
+    <svg class="crossed-swords" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <g stroke="#c22f38" stroke-linecap="round" fill="none" opacity="0.6">
+        <!-- épée 1 : haut-gauche vers bas-droite -->
+        <line x1="18" y1="18" x2="82" y2="82" stroke-width="4"/>
+        <line x1="26" y1="18" x2="14" y2="30" stroke-width="3"/>
+        <circle cx="18" cy="18" r="3" fill="#c22f38" stroke="none"/>
+
+        <!-- épée 2 : haut-droite vers bas-gauche -->
+        <line x1="82" y1="18" x2="18" y2="82" stroke-width="4"/>
+        <line x1="74" y1="18" x2="86" y2="30" stroke-width="3"/>
+        <circle cx="82" cy="18" r="3" fill="#c22f38" stroke="none"/>
+      </g>
+    </svg>
+  </div>
+
+  <div style="padding:0 6vw 7em; max-width:1200px; margin:0 auto;">
+    <div class="kicker"><span class="num">✦</span>Catégories</div>
+    <h2 class="title" style="margin-bottom:1.2em;">Explorer le Codex</h2>
+    <div class="hub-grid">
+      <a class="cat-tile ready" href="categories/Pouvoirs.html">
+        <span class="icon">✨</span><span class="name">Pouvoirs</span><span class="status">Explorer →</span>
+      </a>
+      <a class="cat-tile ready" href="categories/Combat.html">
+        <span class="icon">⚔️</span><span class="name">Combat</span><span class="status">Explorer →</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Monde.html">
+        <span class="icon">🌍</span><span class="name">Monde</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Bestiaire.html">
+        <span class="icon">🐺</span><span class="name">Bestiaire</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Personnages.html">
+        <span class="icon">🧙</span><span class="name">Personnages</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Equipement.html">
+        <span class="icon">🎒</span><span class="name">Équipement</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Factions.html">
+        <span class="icon">🏰</span><span class="name">Factions</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Lore.html">
+        <span class="icon">📖</span><span class="name">Lore</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Cartes.html">
+        <span class="icon">🗺️</span><span class="name">Cartes</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Commerce.html">
+        <span class="icon">💰</span><span class="name">Commerce</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Politique.html">
+        <span class="icon">👑</span><span class="name">Politique</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Religion.html">
+        <span class="icon">🕯️</span><span class="name">Religion</span><span class="status">À venir</span>
+      </a>
+    </div>
+  </div>
+
+  <section class="closing" style="border-top:1px solid var(--line);">
+    <div class="closing-inner">
+      <div class="kicker"><span class="num">❧</span>Ce que ça change</div>
+      <h2>Il n'existe pas une seule façon de devenir puissant</h2>
+      <p>Un noble peut naître avec un Sang exceptionnel. Un paysan peut recevoir une Veine par Rituel. Un fou peut vendre sa mémoire pour obtenir une Veine précise.</p>
+      <p>Et un vieux maître d'armes peut tuer tous les précédents avec une simple épée.</p>
+      <p class="final">De quoi donner à chaque personnage — et à chaque faction — une raison différente d'exister.</p>
+    </div>
+  </section>
+
+  <footer>Codex du Monde — document de travail</footer>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

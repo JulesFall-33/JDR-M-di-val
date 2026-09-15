@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Combat — Nocthémar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<canvas id="embers"></canvas>
+<div class="orb orb-white"></div>
+<div class="orb orb-white-2"></div>
+<div class="orb orb-red"></div>
+
+<header class="topbar">
+  <a class="brand" href="../index.html">Nocthémar</a>
+  <span class="brand-sub">Codex de l'univers JDR</span>
+  <span class="crumb">/ <span class="cur">Combat</span></span>
+  <a class="back" href="../index.html">← Catégories</a>
+</header>
+
+<main>
+
+  <section>
+    <div class="kicker"><span class="num">⚔️</span>La maîtrise martiale</div>
+    <h2 class="title">Arts des Armes</h2>
+    <p class="lede">Pas de mana, pas de magie : de l'entraînement. Mais un maître absolu atteint des performances qui paraissent surnaturelles. Chaque arme possède son propre Art, progressant en sept rangs.</p>
+
+    <table>
+      <thead><tr><th>Rang</th><th>Grade</th><th>Concept</th></tr></thead>
+      <tbody>
+        <tr><td>I</td><td>Éveillé</td><td>Comprend les fondements de son arme</td></tr>
+        <tr><td>II</td><td>Combattant</td><td>Peut combattre efficacement avec elle</td></tr>
+        <tr><td>III</td><td>Virtuose</td><td>Chaque mouvement devient extrêmement précis</td></tr>
+        <tr><td>IV</td><td>Maître</td><td>A développé son propre style</td></tr>
+        <tr><td>V</td><td>Souverain</td><td>Sa maîtrise impose sa domination dans son domaine</td></tr>
+        <tr><td>VI</td><td>Légende</td><td>Ses techniques dépassent les capacités humaines</td></tr>
+        <tr><td>VII</td><td>Mythe</td><td>Son art devient une référence qui traverse les générations</td></tr>
+      </tbody>
+    </table>
+
+    <p style="color:var(--parchment-dim); margin:2em 0 0.6em;">Chaque arme constitue une discipline à part entière :</p>
+    <div class="weapon-list">
+      <span>Épée</span><span>Lance</span><span>Hache</span><span>Arc</span>
+      <span>Dague</span><span>Marteau</span><span>Arme à deux mains</span>
+      <span>Bouclier</span><span>Arts martiaux</span>
+    </div>
+
+    <div class="character-card ornate">
+      <div class="tag">Exemple de personnage</div>
+      <h3>Chevalier de la famille Valcor</h3>
+      <dl>
+        <dt>Héritage</dt><dd>Sang du Géant</dd>
+        <dt>Art</dt><dd>Épée — rang V, Souverain</dd>
+        <dt>Veine</dt><dd>Aucune</dd>
+      </dl>
+      <p style="margin-top:1.2em; margin-bottom:0; font-style:italic; color:var(--parchment-dim);">Il peut pourtant se révéler plus dangereux qu'un utilisateur de Veine.</p>
+    </div>
+  </section>
+
+  <footer>Codex du Monde — document de travail</footer>
+</main>
+
+<script src="../app.js"></script>
+</body>
+</html>
