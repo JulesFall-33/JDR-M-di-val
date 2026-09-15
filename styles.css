@@ -18,7 +18,7 @@
 }
 
 *{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth; overflow-x:hidden;}
 body{
   margin:0;
   background:var(--ink);
@@ -26,6 +26,8 @@ body{
   font-family:"EB Garamond", serif;
   font-size:19px;
   line-height:1.7;
+  max-width:100vw;
+  overflow-x:hidden;
 }
 h1,h2,h3,h4,.disp{
   font-family:"Cinzel", serif;
@@ -432,4 +434,41 @@ footer{
   .two-col{grid-template-columns:1fr;}
   .hero{min-height:auto; padding-top:3em; padding-bottom:3em;}
   .topbar{padding:1em 5vw;}
+}
+
+/* ---------- TÉLÉPHONES ---------- */
+@media (max-width: 600px){
+  body{font-size:16.5px;}
+  section{padding:3em 5.5vw;}
+  .topbar{padding:0.85em 5vw; gap:0.5em;}
+  .topbar .brand-sub{display:none;}
+  .topbar .crumb{display:none;}
+  .topbar .back{padding:0.55em 0.85em; font-size:0.66em; white-space:nowrap;}
+  h2.title{font-size:1.8em;}
+  h3.subtitle{font-size:1.3em;}
+  .lede{font-size:1.02em; margin-bottom:1.6em;}
+  .hero-sub{font-size:1.05em;}
+  .kicker{font-size:0.7em; gap:0.6em; margin-bottom:1em;}
+  .kicker .num{width:1.8em; height:1.8em; font-size:0.85em;}
+  table{font-size:0.85em;}
+  th,td{padding:0.6em 0.65em;}
+  .example-box{padding:1.4em 1.3em;}
+  .character-card{padding:1.5em 1.4em;}
+  .character-card dl{grid-template-columns:1fr; gap:0.1em 0;}
+  .character-card dt{margin-top:0.7em;}
+  .character-card dt:first-child{margin-top:0;}
+  .cat-tile{min-height:140px; padding:1.6em 1.3em;}
+  .veine-card, .voie-cell{min-height:auto; padding:1.5em 1.3em;}
+  .weapon-list span{font-size:0.72em; padding:0.45em 0.85em;}
+  .placeholder-hero{min-height:40vh;}
+  .closing{padding:4.5em 5.5vw 5.5em;}
+  .closing h2{font-size:1.5em;}
+  .closing .final{font-size:1.05em;}
+}
+
+@media (max-width: 380px){
+  body{font-size:15.5px;}
+  h2.title{font-size:1.55em;}
+  .hero h1{font-size:1.9em;}
+  .topbar .brand{font-size:0.9em;}
 }
