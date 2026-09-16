@@ -25,13 +25,114 @@
 <main>
 
   <section>
-    <div class="placeholder-hero">
-      <div class="picon">🐺</div>
-      <div class="kicker"><span class="num">🐺</span>À compléter</div>
-      <h2 class="title">Bestiaire</h2>
-      <p class="lede">La catégorie « Bestiaire » n'a pas encore été détaillée.</p>
-      <div class="placeholder-box">Le contenu de cette section viendra plus tard — pour l'instant, elle sert de réservation dans la structure du Codex.</div>
+    <div class="kicker"><span class="num">🐾</span>Faune du monde</div>
+    <h2 class="title">Bestiaire</h2>
+    <p class="lede">Des créatures paisibles des fermes aux prédateurs qui rôdent aux lisières, le monde grouille de vie. Chaque créature est classée selon son niveau de dangerosité envers les voyageurs.</p>
+    <div class="host-legend">
+      <span class="host-red">🔴 Hostile</span>
+      <span class="host-orange">🟠 Territorial / Méfiant</span>
+      <span class="host-yellow">🟡 Territorial</span>
+      <span class="host-green">🟢 Neutre</span>
     </div>
+  </section>
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">🌲</span>Catégorie</div>
+    <h3 class="subtitle">Terrestres</h3>
+    <table class="beast-table">
+      <thead><tr><th>Créature</th><th>Type</th><th>Hostilité</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>Mange-cœur</td><td>Humanoïde</td><td class="host-red">🔴 Hostile</td><td class="beast-desc">Prédateur humanoïde qui éventre ses victimes et consomme leur cœur. Il peut imiter grossièrement la voix d'une personne récemment tuée.</td></tr>
+        <tr><td>Goule</td><td>Mort-vivant</td><td class="host-red">🔴 Hostile</td><td class="beast-desc">Créature humanoïde maigre se nourrissant principalement de cadavres.</td></tr>
+        <tr><td>Géant des os</td><td>Créature magique</td><td class="host-red">🔴 Hostile</td><td class="beast-desc">Assemblage d'ossements humains et animaux autour d'un noyau magique.</td></tr>
+        <tr><td>Ours caveur</td><td>Bête</td><td class="host-orange">🟠 Territorial</td><td class="beast-desc">Ours creusant ses tanières dans les collines, très agressif lorsqu'on approche de ses petits.</td></tr>
+        <tr><td>Élan noir</td><td>Cervidé</td><td class="host-orange">🟠 Territorial</td><td class="beast-desc">Immense cervidé aux bois pouvant mesurer plus de deux mètres.</td></tr>
+        <tr><td>Géant des Collines</td><td>Géant</td><td class="host-yellow">🟡 Territorial</td><td class="beast-desc">Être immense et solitaire vivant dans les montagnes.</td></tr>
+        <tr><td>Chacal rouge</td><td>Prédateur</td><td class="host-orange">🟠 Conditionnellement hostile</td><td class="beast-desc">Prédateur des plaines chassant en petites meutes.</td></tr>
+        <tr><td>Lombre</td><td>Petit prédateur</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit animal ressemblant à un renard très fin. Sa fourrure change légèrement de teinte avec les saisons.</td></tr>
+        <tr><td>Élan</td><td>Cervidé</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Immense cervidé des régions froides.</td></tr>
+        <tr><td>Lièvre des landes</td><td>Petit mammifère</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Lièvre très rapide et particulièrement commun.</td></tr>
+        <tr><td>Lueurine</td><td>Petit mammifère</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petite créature ronde au pelage doux et aux grands yeux réfléchissant la lumière. Elle mange des baies et des champignons.</td></tr>
+        <tr><td>Renard</td><td>Petit prédateur</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit prédateur rusé vivant près des bois et parfois aux abords des villages.</td></tr>
+        <tr><td>Blaireau</td><td>Petit mammifère</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Animal fouisseur vivant dans de profonds terriers. Plutôt solitaire.</td></tr>
+        <tr><td>Hérisson</td><td>Petit mammifère</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit animal nocturne fréquent dans les jardins et les haies.</td></tr>
+        <tr><td>Écureuil</td><td>Petit mammifère</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit grimpeur vivant dans les arbres et stockant des noix pour l'hiver.</td></tr>
+        <tr><td>Sanglier</td><td>Bête sauvage</td><td class="host-orange">🟠 Méfiant</td><td class="beast-desc">Animal puissant vivant dans les forêts. Il évite généralement les humains mais peut charger s'il est acculé.</td></tr>
+        <tr><td>Chevreuil</td><td>Cervidé</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit cervidé des bois et des lisières, très commun dans les campagnes.</td></tr>
+        <tr><td>Cerf</td><td>Cervidé</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Grand cervidé vivant dans les forêts. Les mâles portent de grands bois.</td></tr>
+        <tr><td>Mouton</td><td>Animal domestique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Élevé pour sa laine, son lait et sa viande.</td></tr>
+        <tr><td>Chèvre</td><td>Animal domestique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Animal robuste pouvant vivre dans les collines et les terrains difficiles.</td></tr>
+        <tr><td>Vache</td><td>Animal domestique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Élevée pour son lait, sa viande et parfois utilisée comme animal de trait.</td></tr>
+        <tr><td>Cochon</td><td>Animal domestique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Élevé dans les fermes pour sa viande.</td></tr>
+        <tr><td>Âne</td><td>Animal domestique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Animal de bât résistant, très utilisé pour transporter des marchandises.</td></tr>
+        <tr><td>Chat</td><td>Animal domestique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit félin domestique, indépendant et curieux.</td></tr>
+        <tr><td>Chien</td><td>Animal domestique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Compagnon fidèle utilisé pour la garde, la chasse et la protection des troupeaux.</td></tr>
+        <tr><td>Cheval</td><td>Animal domestique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Monture et animal de travail incontournable.</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">🪽</span>Catégorie</div>
+    <h3 class="subtitle">Volants</h3>
+    <table class="beast-table">
+      <thead><tr><th>Créature</th><th>Type</th><th>Hostilité</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>Wyverne</td><td>Dragon / Reptile volant</td><td class="host-red">🔴 Hostile</td><td class="beast-desc">Reptile volant existant en plusieurs tailles et variantes : sang, feu, sable et neige.</td></tr>
+        <tr><td>Aigle géant</td><td>Oiseau / Prédateur</td><td class="host-orange">🟠 Conditionnellement hostile</td><td class="beast-desc">Immense rapace capable d'emporter un enfant ou d'attaquer un cavalier.</td></tr>
+        <tr><td>Aigle royal</td><td>Oiseau / Prédateur</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Grand rapace évitant généralement les humains.</td></tr>
+        <tr><td>Corbeau</td><td>Oiseau</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Intelligent, charognard et parfois dressé comme messager.</td></tr>
+        <tr><td>Cigogne</td><td>Oiseau migrateur</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Grand oiseau migrateur nichant sur les toits et les clochers.</td></tr>
+        <tr><td>Héron</td><td>Oiseau</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Grand oiseau des rivières, lacs et marais.</td></tr>
+        <tr><td>Canard</td><td>Oiseau aquatique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Très commun autour des fermes et des étangs.</td></tr>
+        <tr><td>Moineau</td><td>Petit oiseau</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit oiseau très commun vivant autour des habitations.</td></tr>
+        <tr><td>Hirondelle</td><td>Petit oiseau</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Oiseau migrateur rapide nichant souvent sous les toits.</td></tr>
+        <tr><td>Chouette</td><td>Oiseau nocturne</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Rapace nocturne vivant dans les forêts et les vieilles granges.</td></tr>
+        <tr><td>Pie</td><td>Oiseau</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Oiseau curieux attiré par les objets brillants. Certaines pies semblent étonnamment douées pour reconnaître les personnes.</td></tr>
+        <tr><td>Pigeon</td><td>Oiseau domestique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Très commun dans les villes. Certaines villes utilisent des pigeons dressés pour transmettre de petits messages.</td></tr>
+        <tr><td>Poulet</td><td>Volaille domestique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Élevé pour ses œufs et sa viande.</td></tr>
+        <tr><td>Oie</td><td>Volaille domestique</td><td class="host-yellow">🟡 Territorial</td><td class="beast-desc">Oiseau de ferme bruyant servant parfois d'alarme lorsqu'un inconnu approche.</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">🌊</span>Catégorie</div>
+    <h3 class="subtitle">Aquatiques</h3>
+    <table class="beast-table">
+      <thead><tr><th>Créature</th><th>Type</th><th>Hostilité</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>Megalodon</td><td>Otodontidae</td><td class="host-red">🔴 Hostile</td><td class="beast-desc">Énorme requin très violent et rapide qui peut tuer une proie très rapidement.</td></tr>
+        <tr><td>Dos-de-vase</td><td>Amphibien géant</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Énorme amphibien passant presque toute sa vie au fond des lacs.</td></tr>
+        <tr><td>Grenouille cloche</td><td>Amphibien</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Grosse grenouille dont le chant résonne comme une cloche.</td></tr>
+        <tr><td>Dauphin</td><td>Mammifère marin</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Mammifère marin vivant en groupes.</td></tr>
+        <tr><td>Phoque</td><td>Mammifère marin</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Mammifère marin fréquent sur certaines côtes.</td></tr>
+        <tr><td>Poisson</td><td>Animal aquatique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Nombreuses espèces de petits poissons vivant en bancs.</td></tr>
+        <tr><td>Méduse</td><td>Créature marine</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Créature marine commune près des côtes. Certaines espèces sont urticantes.</td></tr>
+        <tr><td>Huître</td><td>Mollusque</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Coquillage fixé aux rochers et aux fonds marins.</td></tr>
+        <tr><td>Carpe</td><td>Poisson</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Poisson commun des étangs et des rivières lentes, souvent élevé par les habitants.</td></tr>
+        <tr><td>Truite</td><td>Poisson</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Poisson vivant dans les rivières fraîches et rapides.</td></tr>
+        <tr><td>Anguille</td><td>Poisson</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Poisson serpentiforme vivant dans les rivières et les eaux stagnantes.</td></tr>
+        <tr><td>Écrevisse</td><td>Crustacé</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit crustacé vivant dans les rivières et les étangs.</td></tr>
+        <tr><td>Tortue de rivière</td><td>Reptile aquatique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petite tortue vivant dans les eaux calmes et se chauffant au soleil sur les troncs.</td></tr>
+        <tr><td>Loutre</td><td>Mammifère aquatique</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Animal joueur et agile vivant près des rivières.</td></tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">🐝</span>Catégorie</div>
+    <h3 class="subtitle">Petites créatures &amp; insectes</h3>
+    <table class="beast-table">
+      <thead><tr><th>Créature</th><th>Type</th><th>Hostilité</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>Mouches de charogne</td><td>Insectes</td><td class="host-red">🔴 Hostile</td><td class="beast-desc">Essaims capables de dévorer un animal blessé en quelques minutes.</td></tr>
+        <tr><td>Abeille</td><td>Insecte</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Insecte vivant en colonies et produisant du miel.</td></tr>
+        <tr><td>Papillon</td><td>Insecte</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Insecte commun des jardins et des prairies. Certaines espèces ont des motifs légèrement luminescents.</td></tr>
+        <tr><td>Libellule</td><td>Insecte</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Insecte rapide vivant près des étangs et des rivières.</td></tr>
+        <tr><td>Coccinelle</td><td>Insecte</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit insecte très courant dans les jardins.</td></tr>
+        <tr><td>Luciole</td><td>Insecte</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit insecte nocturne dont l'abdomen produit une faible lueur naturelle.</td></tr>
+        <tr><td>Escargot</td><td>Mollusque terrestre</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit animal commun dans les jardins et les sous-bois.</td></tr>
+        <tr><td>Araignée</td><td>Arachnide</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Nombreuses petites espèces vivant dans les maisons, granges et forêts.</td></tr>
+        <tr><td>Ver de terre</td><td>Annélide</td><td class="host-green">🟢 Neutre</td><td class="beast-desc">Petit animal souterrain essentiel aux sols cultivés.</td></tr>
+      </tbody>
+    </table>
   </section>
 
   <footer>Codex du Monde — document de travail</footer>
