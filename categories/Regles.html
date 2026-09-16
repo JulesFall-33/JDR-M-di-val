@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Règles du JDR — Nocthémar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<canvas id="embers"></canvas>
+<div class="orb orb-white"></div>
+<div class="orb orb-white-2"></div>
+<div class="orb orb-red"></div>
+
+<header class="topbar">
+  <a class="brand" href="../index.html">Nocthémar</a>
+  <span class="brand-sub">Codex de l'univers JDR</span>
+  <span class="crumb">/ <span class="cur">Règles du JDR</span></span>
+  <a class="back" href="../index.html">← Catégories</a>
+</header>
+
+<main>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">📜</span>Vue d'ensemble</div>
+    <h2 class="title">Règles du JDR</h2>
+    <p class="lede">Le meneur de jeu (MJ) décrit le monde et incarne tout ce qui n'est pas un personnage-joueur. Les joueurs décrivent les actions de leurs personnages. Quand l'issue d'une action est incertaine, on la résout par un jet de dé plutôt que par la seule discussion.</p>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">I</span>Résolution des actions</div>
+    <h2 class="title">Les jets de compétence</h2>
+    <p class="lede">Toute tentative incertaine se résout de la même façon : on lance un d20, on ajoute un modificateur lié à la compétence ou à la caractéristique utilisée, et on compare le total à un Degré de Difficulté (DD) fixé par le MJ.</p>
+
+    <table>
+      <thead><tr><th>Formule</th><th>Résultat</th></tr></thead>
+      <tbody>
+        <tr><td>d20 + modificateur ≥ DD</td><td>Réussite</td></tr>
+        <tr><td>d20 + modificateur &lt; DD</td><td>Échec</td></tr>
+        <tr><td>20 naturel</td><td>Réussite critique (souvent avec un bonus narratif)</td></tr>
+        <tr><td>1 naturel</td><td>Échec critique (souvent avec une complication)</td></tr>
+      </tbody>
+    </table>
+
+    <p style="color:var(--parchment-dim); margin:2em 0 0.6em;">Échelle indicative des Degrés de Difficulté :</p>
+    <table>
+      <thead><tr><th>DD</th><th>Difficulté</th></tr></thead>
+      <tbody>
+        <tr><td>5</td><td>Très facile</td></tr>
+        <tr><td>10</td><td>Facile</td></tr>
+        <tr><td>15</td><td>Modérée</td></tr>
+        <tr><td>20</td><td>Difficile</td></tr>
+        <tr><td>25</td><td>Très difficile</td></tr>
+        <tr><td>30</td><td>Quasi impossible</td></tr>
+      </tbody>
+    </table>
+
+    <div class="example-box ornate">
+      <div class="tag">Exemple</div>
+      <p style="margin:0;">Un personnage tente de crocheter une serrure rouillée (DD 15). Il lance un d20, obtient 12, ajoute son modificateur de Dextérité +4 : total 16. C'est une réussite.</p>
+    </div>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">II</span>Duels et confrontations</div>
+    <h2 class="title">Les tests opposés</h2>
+    <p class="lede">Quand deux personnages s'opposent directement — une lutte, une course, un mensonge contré par de la perspicacité — chacun lance son propre d20 et ajoute son modificateur. Le résultat le plus haut l'emporte.</p>
+
+    <div class="example-box ornate">
+      <div class="tag">Exemple</div>
+      <p style="margin:0;">Un personnage tente de mentir à un garde. Le joueur lance Tromperie (14), le MJ lance Perspicacité pour le garde (11). Le mensonge passe.</p>
+    </div>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">III</span>Le combat</div>
+    <h2 class="title">Initiative &amp; ordre des tours</h2>
+    <p class="lede">Dès qu'un combat commence, chaque participant lance un dé d'Initiative (généralement d20 + modificateur de rapidité). Les tours se déroulent ensuite du score le plus haut au plus bas, et ce même ordre se répète à chaque round jusqu'à la fin du combat.</p>
+
+    <table>
+      <thead><tr><th>Étape</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td>1. Déclenchement</td><td>Le combat commence, souvent par surprise ou par une action hostile</td></tr>
+        <tr><td>2. Initiative</td><td>Chaque participant lance son dé, on classe du plus haut au plus bas</td></tr>
+        <tr><td>3. Tours</td><td>Chacun agit à son tour : se déplacer, attaquer, utiliser une capacité, etc.</td></tr>
+        <tr><td>4. Round suivant</td><td>Une fois tout le monde passé, on revient au premier de la liste</td></tr>
+        <tr><td>5. Fin du combat</td><td>Quand un camp est vaincu, fuit, ou qu'un accord est trouvé</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">IV</span>Encaisser les coups</div>
+    <h2 class="title">Points de vie &amp; dégâts</h2>
+    <p class="lede">Chaque personnage dispose d'un total de Points de Vie (PV) représentant sa capacité à encaisser des blessures avant de tomber. Une attaque réussie inflige des dégâts, généralement déterminés par un jet de dé propre à l'arme ou au sort utilisé.</p>
+
+    <div class="two-col">
+      <div>
+        <h4 style="font-size:1.15em; margin-bottom:0.5em;">Toucher</h4>
+        <p style="font-size:0.95em; color:var(--parchment-dim);">L'attaquant lance un d20 + modificateur d'attaque contre la Classe d'Armure (CA) de la cible. S'il égale ou dépasse la CA, l'attaque touche.</p>
+      </div>
+      <div>
+        <h4 style="font-size:1.15em; margin-bottom:0.5em;">Dégâts</h4>
+        <p style="font-size:0.95em; color:var(--parchment-dim);">Une fois le coup confirmé, on lance le dé de dégâts de l'arme (ex : 1d8 pour une épée longue) et on le retire des PV de la cible.</p>
+      </div>
+    </div>
+
+    <div class="example-box ornate">
+      <div class="tag">Conséquence</div>
+      <p style="margin:0;">Quand les PV d'un personnage tombent à 0, il est mis hors combat — inconscient, mourant, ou mort selon les règles choisies par la table.</p>
+    </div>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">V</span>Modificateurs de situation</div>
+    <h2 class="title">Avantage &amp; Désavantage</h2>
+    <p style="font-size:0.95em; color:var(--parchment-dim); max-width:62ch;">Plutôt que d'empiler des petits bonus ou malus, de nombreuses situations accordent l'Avantage ou le Désavantage sur un jet :</p>
+
+    <table>
+      <thead><tr><th>Situation</th><th>Effet</th></tr></thead>
+      <tbody>
+        <tr><td>Avantage</td><td>On lance deux d20 et on garde le résultat le plus haut</td></tr>
+        <tr><td>Désavantage</td><td>On lance deux d20 et on garde le résultat le plus bas</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85em; color:var(--parchment-faint); font-style:italic; margin-top:1em;">Attaquer un ennemi qui ne vous voit pas, agir avec un équipement inadapté, bénéficier d'une position en hauteur… autant de raisons courantes d'obtenir l'un ou l'autre.</p>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">VI</span>Résister aux effets</div>
+    <h2 class="title">Jets de sauvegarde</h2>
+    <p class="lede">Face à un piège, un sort, un poison ou tout autre effet subi, un personnage effectue un jet de sauvegarde : d20 + modificateur de la caractéristique concernée, comparé au DD de l'effet. La réussite permet souvent d'éviter l'effet ou d'en réduire l'impact.</p>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">VII</span>Récupération</div>
+    <h2 class="title">Repos &amp; guérison</h2>
+
+    <table>
+      <thead><tr><th>Type de repos</th><th>Durée</th><th>Effet</th></tr></thead>
+      <tbody>
+        <tr><td>Repos court</td><td>~1 heure</td><td>Récupération partielle (PV, certaines capacités)</td></tr>
+        <tr><td>Repos long</td><td>~8 heures</td><td>Récupération complète des PV et des capacités</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <div class="kicker"><span class="num">VIII</span>Évolution</div>
+    <h2 class="title">Progression de personnage</h2>
+    <p class="lede">En accomplissant des quêtes, en vainquant des adversaires et en surmontant des défis, les personnages gagnent de l'Expérience (XP). Une fois un certain seuil atteint, ils montent de niveau : davantage de PV, de nouvelles capacités, des compétences plus fiables.</p>
+
+    <div class="character-card ornate">
+      <div class="tag">Exemple de progression</div>
+      <h3>Un aventurier débutant</h3>
+      <dl>
+        <dt>Niveau 1</dt><dd>Compétences de base, peu de PV</dd>
+        <dt>Niveau 5</dt><dd>Premières capacités marquantes, plus résistant</dd>
+        <dt>Niveau 10+</dt><dd>Figure reconnue, capable de rivaliser avec des menaces majeures</dd>
+      </dl>
+      <p style="margin-top:1.2em; margin-bottom:0; font-style:italic; color:var(--parchment-dim);">La progression reste avant tout un prétexte : ce qui compte, c'est l'histoire vécue en chemin.</p>
+    </div>
+  </section>
+
+  <footer>Codex du Monde — document de travail</footer>
+</main>
+
+<script src="../app.js"></script>
+</body>
+</html>
