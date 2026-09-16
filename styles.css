@@ -974,11 +974,11 @@ footer{
   box-shadow:inset 0 0 0 3px rgba(122,28,34,0.25);
   transition:border-color .25s ease, box-shadow .25s ease;
 }
-.char-card:hover{
+.char-card:hover, .char-card:active{
   border-color:var(--blood);
   box-shadow:inset 0 0 0 3px rgba(122,28,34,0.4);
 }
-.char-card:hover .char-portrait{
+.char-card:hover .char-portrait, .char-card:active .char-portrait{
   transform:scale(1.16) translateY(-3%);
   filter:saturate(1) drop-shadow(0 22px 30px rgba(0,0,0,0.65));
 }
@@ -987,7 +987,7 @@ footer{
   border-radius:50%; background:var(--blood-dim); opacity:0.65;
   transition:opacity .25s ease;
 }
-.char-card:hover .frame-corner{ opacity:1; background:var(--blood); }
+.char-card:hover .frame-corner, .char-card:active .frame-corner{ opacity:1; background:var(--blood); }
 .frame-corner.tl{ top:4px; left:4px; }
 .frame-corner.tr{ top:4px; right:4px; }
 .frame-corner.bl{ bottom:4px; left:4px; }
@@ -1028,7 +1028,7 @@ footer{
   position:absolute; inset:0; width:100%; height:100%;
   opacity:0; transition:opacity .6s ease;
 }
-.portrait-swap:hover .portrait-sketch{ opacity:1; }
+.portrait-swap:hover .portrait-sketch, .portrait-swap:active .portrait-sketch{ opacity:1; }
 .profile-name{
   font-family:"Cinzel Decorative", serif;
   font-size:2.3em; line-height:1.1; margin-bottom:0.25em;
