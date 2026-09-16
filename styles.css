@@ -968,38 +968,31 @@ footer{
 }
 .char-card{
   display:block; position:relative; overflow:visible;
-  padding:12px 12px 0;
+  padding:10px 10px 0;
   border:1px solid var(--blood-dim);
   background:linear-gradient(160deg, #1a1210, #0e0908);
-  box-shadow:
-    inset 0 0 0 1px rgba(0,0,0,0.5),
-    inset 0 0 0 2px var(--blood-dim);
+  box-shadow:inset 0 0 0 3px rgba(122,28,34,0.25);
   transition:border-color .25s ease, box-shadow .25s ease;
 }
 .char-card:hover{
   border-color:var(--blood);
-  box-shadow:
-    inset 0 0 0 1px rgba(0,0,0,0.5),
-    inset 0 0 0 2px var(--blood),
-    0 0 24px rgba(122,28,34,0.35);
+  box-shadow:inset 0 0 0 3px rgba(122,28,34,0.4);
 }
 .char-card:hover .char-portrait{
   transform:scale(1.16) translateY(-3%);
   filter:saturate(1) drop-shadow(0 22px 30px rgba(0,0,0,0.65));
 }
 .frame-corner{
-  position:absolute; width:7px; height:7px; z-index:4; pointer-events:none;
-  background:var(--ink); border:1px solid var(--blood-dim);
-  transform:rotate(45deg);
-  box-shadow:0 0 5px rgba(122,28,34,0.35);
-  transition:border-color .25s ease;
+  position:absolute; width:5px; height:5px; z-index:4; pointer-events:none;
+  border-radius:50%; background:var(--blood-dim); opacity:0.65;
+  transition:opacity .25s ease;
 }
-.char-card:hover .frame-corner{ border-color:var(--blood); }
-.frame-corner.tl{ top:1px; left:1px; }
-.frame-corner.tr{ top:1px; right:1px; }
-.frame-corner.bl{ bottom:1px; left:1px; }
-.frame-corner.br{ bottom:1px; right:1px; }
-.char-portrait-wrap{ position:relative; overflow:visible; margin-bottom:12px; }
+.char-card:hover .frame-corner{ opacity:1; background:var(--blood); }
+.frame-corner.tl{ top:4px; left:4px; }
+.frame-corner.tr{ top:4px; right:4px; }
+.frame-corner.bl{ bottom:4px; left:4px; }
+.frame-corner.br{ bottom:4px; right:4px; }
+.char-portrait-wrap{ position:relative; overflow:visible; margin-bottom:10px; }
 .char-portrait{
   display:block; position:relative; z-index:2;
   width:100%; height:auto;
@@ -1009,7 +1002,7 @@ footer{
 }
 .char-name{
   position:relative; z-index:1;
-  margin:0 -12px; padding:0.9em 0.6em; text-align:center;
+  margin:0 -10px; padding:0.9em 0.6em; text-align:center;
   font-family:"Cinzel", serif; font-size:0.92em; letter-spacing:0.03em;
   color:var(--parchment); border-top:1px solid var(--blood-dim);
 }
