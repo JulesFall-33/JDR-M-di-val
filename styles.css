@@ -1195,10 +1195,6 @@ a.pbadge:hover{ border-color:currentColor; }
   display:block; position:relative; z-index:3;
   width:100%; height:100%; object-fit:contain; object-position:50% 50%;
   filter:saturate(0.95);
-  transition:filter .45s ease;
-}
-.mtg-card:hover .mtg-art-fg, .mtg-card:active .mtg-art-fg{
-  filter:grayscale(1);
 }
 .mtg-typeline{
   display:flex; align-items:center; justify-content:space-between; gap:0.5em;
