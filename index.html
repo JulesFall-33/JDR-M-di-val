@@ -11,6 +11,8 @@
 </head>
 <body>
 <canvas id="embers"></canvas>
+<div class="page-bg" style="background-image:url('img/hero-nocthemar.jpg');"></div>
+<div class="page-scrim"></div>
 <div class="orb orb-white"></div>
 <div class="orb orb-white-2"></div>
 <div class="orb orb-red"></div>
@@ -18,70 +20,75 @@
 <header class="topbar">
   <a class="brand" href="index.html">Nocthémar</a>
   <span class="brand-sub">Codex de l'univers JDR</span>
+  <nav class="nav-links">
+    <a href="index.html" class="active">Accueil</a>
+    <a href="#categories">Le Codex</a>
+    <a href="#apropos">À propos</a>
+  </nav>
+  <button class="nav-search" aria-label="Rechercher">
+    <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+  </button>
 </header>
 
 <main>
 
-  <div class="hero">
-    <svg class="crossed-swords" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <g stroke="#c22f38" stroke-linecap="round" fill="none" opacity="0.6">
-        <!-- épée 1 : haut-gauche vers bas-droite -->
-        <line x1="18" y1="18" x2="82" y2="82" stroke-width="4"/>
-        <line x1="26" y1="18" x2="14" y2="30" stroke-width="3"/>
-        <circle cx="18" cy="18" r="3" fill="#c22f38" stroke="none"/>
-
-        <!-- épée 2 : haut-droite vers bas-gauche -->
-        <line x1="82" y1="18" x2="18" y2="82" stroke-width="4"/>
-        <line x1="74" y1="18" x2="86" y2="30" stroke-width="3"/>
-        <circle cx="82" cy="18" r="3" fill="#c22f38" stroke="none"/>
-      </g>
-    </svg>
-  </div>
-
-  <div style="padding:0 6vw 7em; max-width:1200px; margin:0 auto;">
-    <div class="kicker"><span class="num">✦</span>Catégories</div>
-    <h2 class="title" style="margin-bottom:1.2em;">Explorer le Codex </h2>
-    <div class="hub-grid">
-      <a class="cat-tile ready pouvoirs" href="categories/Pouvoirs.html">
-        <span class="icon">✨</span><span class="name">Pouvoirs</span><span class="status">Explorer →</span>
-      </a>
-      <a class="cat-tile ready combat" href="categories/Combat.html">
-        <span class="icon">⚔️</span><span class="name">Combat</span><span class="status">Explorer →</span>
-      </a>
-<a class="cat-tile ready bestiaire" href="categories/Bestiaire.html">
-        <span class="icon">🐺</span><span class="name">Bestiaire</span><span class="status">Explorer →</span>
-      </a>
-      <a class="cat-tile ready personnages" href="categories/Personnages.html">
-        <span class="icon">🧙</span><span class="name">Personnages</span><span class="status">Explorer →</span>
-      </a>
-      <a class="cat-tile empty" href="categories/Equipement.html">
-        <span class="icon">🎒</span><span class="name">Équipement</span><span class="status">À venir</span>
-      </a>
-      <a class="cat-tile empty" href="categories/Factions.html">
-        <span class="icon">🏰</span><span class="name">Factions</span><span class="status">À venir</span>
-      </a>
-      <a class="cat-tile empty" href="categories/Lore.html">
-        <span class="icon">📖</span><span class="name">Lore</span><span class="status">À venir</span>
-      </a>
-      <a class="cat-tile ready cartes" href="categories/Cartes.html">
-        <span class="icon">🗺️</span><span class="name">Cartes</span><span class="status">Explorer →</span>
-      </a>
-      <a class="cat-tile empty" href="categories/Commerce.html">
-        <span class="icon">💰</span><span class="name">Commerce</span><span class="status">À venir</span>
-      </a>
-      <a class="cat-tile empty" href="categories/Politique.html">
-        <span class="icon">👑</span><span class="name">Politique</span><span class="status">À venir</span>
-      </a>
-      <a class="cat-tile empty" href="categories/Religion.html">
-        <span class="icon">🕯️</span><span class="name">Religion</span><span class="status">À venir</span>
-      </a>
-      <a class="cat-tile ready regles" href="categories/Regles.html">
-        <span class="icon">📜</span><span class="name">Règles du JDR</span><span class="status">Explorer →</span>
-      </a>
+  <div class="hero-photo">
+    <div class="hero-photo-content">
+      <div class="hero-eyebrow">✦ Un univers à découvrir</div>
+      <h1 class="hero-v2-title">Bienvenue dans<br><span class="accent">Nocthémar</span></h1>
+      <div class="hero-divider"><span></span><i></i><span></span></div>
+      <p class="hero-sub">Un royaume de sommets glacés, de forêts embrumées et de ruines oubliées — où le pouvoir se gagne, se vole ou se transmet dans le sang.</p>
+      <div class="hero-quote">Les mondes les plus vastes naissent toujours d'une première page.</div>
+      <a class="hero-cta" href="#categories">Explorer le Codex <span>↓</span></a>
     </div>
   </div>
 
-  <section class="closing" style="border-top:1px solid var(--line);">
+  <div id="categories" class="content-panel" style="padding:5em 6vw 7em;">
+   <div style="max-width:1500px; margin:0 auto;">
+    <div class="kicker"><span class="num">✦</span>Catégories</div>
+    <h2 class="title" style="margin-bottom:1.2em;">Explorer le Codex </h2>
+    <div class="hub-grid">
+      <a class="cat-tile ready" href="categories/Pouvoirs.html" style="--img:url('img/titles/pouvoirs.jpg');">
+        <span class="icon">✨</span><span class="name">Pouvoirs</span><span class="status">Explorer →</span>
+      </a>
+      <a class="cat-tile ready" href="categories/Combat.html" style="--img:url('img/titles/combat.jpg');">
+        <span class="icon">⚔️</span><span class="name">Combat</span><span class="status">Explorer →</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Bestiaire.html" style="--img:url('img/titles/bestiaire.jpg');">
+        <span class="icon">🐺</span><span class="name">Bestiaire</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Personnages.html" style="--img:url('img/titles/personnages.jpg');">
+        <span class="icon">🧙</span><span class="name">Personnages</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Equipement.html" style="--img:url('img/titles/equipement.jpg');">
+        <span class="icon">🎒</span><span class="name">Équipement</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Factions.html" style="--img:url('img/titles/factiob.jpg');">
+        <span class="icon">🏰</span><span class="name">Factions</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Lore.html" style="--img:url('img/titles/lore.jpg');">
+        <span class="icon">📖</span><span class="name">Lore</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Cartes.html" style="--img:url('img/titles/carte.jpg');">
+        <span class="icon">🗺️</span><span class="name">Cartes</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Commerce.html" style="--img:url('img/titles/commerces.jpg');">
+        <span class="icon">💰</span><span class="name">Commerce</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Politique.html" style="--img:url('img/titles/politique.jpg');">
+        <span class="icon">👑</span><span class="name">Politique</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile empty" href="categories/Religion.html" style="--img:url('img/titles/religion.jpg');">
+        <span class="icon">🕯️</span><span class="name">Religion</span><span class="status">À venir</span>
+      </a>
+      <a class="cat-tile ready" href="categories/Regles.html" style="--img:url('img/titles/rêgledujdr.jpg');">
+        <span class="icon">📜</span><span class="name">Règles du JDR</span><span class="status">Explorer →</span>
+      </a>
+    </div>
+   </div>
+  </div>
+
+  <section id="apropos" class="closing content-panel" style="border-top:1px solid var(--line);">
     <div class="closing-inner">
       <div class="kicker"><span class="num">❧</span>Ce que ça change</div>
       <h2>Il n'existe pas une seule façon de devenir puissant</h2>
@@ -91,7 +98,7 @@
     </div>
   </section>
 
-  <footer>Codex du Monde — document de travail</footer>
+  <footer class="content-panel">Codex du Monde — document de travail</footer>
 </main>
 
 <script src="app.js"></script>
