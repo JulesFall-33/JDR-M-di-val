@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les Veines — Nocthémar</title>
+<link rel="icon" type="image/png" href="../img/Logo/Nocthemar_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../CSS/Les_Veines.css">
+</head>
+<body>
+<canvas id="embers"></canvas>
+<div class="orb orb-white"></div>
+<div class="orb orb-white-2"></div>
+<div class="orb orb-red"></div>
+
+<header class="topbar">
+  <a class="brand" href="../index.html">Nocthémar</a>
+  <span class="brand-sub">Codex de l'univers JDR</span>
+  <span class="crumb">/ <a href="Pouvoirs.html" style="color:inherit;">Pouvoirs</a> / <span class="cur">Les Veines</span></span>
+  <a class="back" href="Pouvoirs.html">← Pouvoirs</a>
+</header>
+
+<main>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">I</span>Forces fondamentales</div>
+    <h2 class="title">Les Veines</h2>
+    <p class="lede">Les Veines sont des forces fondamentales qui parcourent le monde. Elles ne sont ni des dieux, ni des esprits, ni des créatures au sens traditionnel du terme.</p>
+    <p>Elles existent sous une forme abstraite, ancienne et difficilement compréhensible pour l'esprit humain. Chaque Veine représente une force particulière et possède sa propre nature.</p>
+    <p>Il existe douze Veines :</p>
+
+    <div class="veines-grid">
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Sang.html">
+        <div class="vh"><span class="vnum">I</span><span class="vicon">🩸</span><h4>Sang</h4></div>
+        <div class="domaine">Vie, sacrifice, liens, vitalité</div>
+        <p class="style">Le corps, la vitalité et ce qui circule dans la chair.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Trone.html">
+        <div class="vh"><span class="vnum">II</span><span class="vicon">👑</span><h4>Trône</h4></div>
+        <div class="domaine">Autorité, domination, serments</div>
+        <p class="style">L'autorité, la domination et la volonté imposée.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Regard.html">
+        <div class="vh"><span class="vnum">III</span><span class="vicon">👁️</span><h4>Regard</h4></div>
+        <div class="domaine">Perception, vérité, connaissance</div>
+        <p class="style">La perception, l'observation et la connaissance.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Reve.html">
+        <div class="vh"><span class="vnum">IV</span><span class="vicon">🌙</span><h4>Rêve</h4></div>
+        <div class="domaine">Sommeil, imagination, cauchemar</div>
+        <p class="style">Le sommeil, l'imaginaire et l'irréel.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Tombeau.html">
+        <div class="vh"><span class="vnum">V</span><span class="vicon">⚰️</span><h4>Tombeau</h4></div>
+        <div class="domaine">Mort, vieillissement, décomposition</div>
+        <p class="style">La mort, la fin et ce qui demeure après elle.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Bete.html">
+        <div class="vh"><span class="vnum">VI</span><span class="vicon">🐺</span><h4>Bête</h4></div>
+        <div class="domaine">Instinct, chasse, adaptation</div>
+        <p class="style">L'instinct, la sauvagerie et la nature animale.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Forge.html">
+        <div class="vh"><span class="vnum">VII</span><span class="vicon">⚒️</span><h4>Forge</h4></div>
+        <div class="domaine">Création, matière, métal</div>
+        <p class="style">La création, la matière et la transformation.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Maree.html">
+        <div class="vh"><span class="vnum">VIII</span><span class="vicon">🌊</span><h4>Marée</h4></div>
+        <div class="domaine">Mouvement, changement, hasard</div>
+        <p class="style">Le mouvement, les flux et l'adaptation.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Racine.html">
+        <div class="vh"><span class="vnum">IX</span><span class="vicon">🌿</span><h4>Racine</h4></div>
+        <div class="domaine">Nature, croissance, symbiose</div>
+        <p class="style">La croissance, la nature et l'enracinement.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Esprit.html">
+        <div class="vh"><span class="vnum">X</span><span class="vicon">🕯️</span><h4>Esprit</h4></div>
+        <div class="domaine">Âme, fantômes, mémoire</div>
+        <p class="style">La conscience, l'âme et l'immatériel.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Ombre.html">
+        <div class="vh"><span class="vnum">XI</span><span class="vicon">🌑</span><h4>Ombre</h4></div>
+        <div class="domaine">Secret, absence, dissimulation</div>
+        <p class="style">La dissimulation, l'absence et ce qui échappe au regard.</p>
+      </a>
+      <a class="veine-card" href="../Rang%20des%20Pouvoirs/Chaine.html">
+        <div class="vh"><span class="vnum">XII</span><span class="vicon">⛓️</span><h4>Chaîne</h4></div>
+        <div class="domaine">Liens, contraintes, interdictions</div>
+        <p class="style">Les liens, les contraintes et l'asservissement.</p>
+      </a>
+    </div>
+
+    <p style="margin-top:2.5em;">Une Veine ne possède normalement aucune forme physique.</p>
+    <p>Cependant, lorsqu'elle doit entrer directement en contact avec un individu, elle peut devenir perceptible. Cette manifestation est appelée une <strong>Entité</strong>.</p>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">II</span>Manifestation</div>
+    <h2 class="title">Les Entités</h2>
+    <p class="lede">Une Entité est la manifestation humanoïde d'une Veine.</p>
+    <p>Elle ne sert pas la Veine. Elle ne la représente pas. Elle n'est pas non plus une créature possédant son pouvoir.</p>
+    <p style="font-size:1.05em; color:var(--bronze);"><strong>L'Entité est la Veine elle-même, rendue perceptible sous une forme que l'esprit humain peut comprendre.</strong></p>
+    <p>Ainsi, lorsqu'une Entité déclare :</p>
+    <div class="example-box ornate">
+      <p class="quote-line">« Je suis la Veine du Regard. »</p>
+    </div>
+    <p style="margin-top:2em;">elle ne parle pas symboliquement. La silhouette qui se tient devant le Porteur est réellement une manifestation du Regard.</p>
+    <p>L'Entité n'est cependant qu'une forme temporaire. Lorsque sa présence n'est plus nécessaire, elle disparaît et la Veine retrouve son existence abstraite.</p>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">III</span>Apparence</div>
+    <h2 class="title">Apparence des Entités</h2>
+    <p class="lede">Toutes les Entités possèdent volontairement une apparence extrêmement similaire.</p>
+
+    <div class="veine-illustration">
+      <img src="../img/Personnages/Les_Veines.png" alt="Les douze Entités des Veines">
+      <p class="cap">Les douze Entités — silhouettes astrales identiques, distinguées seulement par le signe discret de leur Veine.</p>
+    </div>
+
+    <p>Elles prennent la forme de silhouettes humanoïdes astrales, dépourvues de vêtements, d'armes ou d'équipement particulier. Leur corps semble constitué d'une matière surnaturelle uniforme, quelque part entre une silhouette physique et une concentration d'énergie astrale. Leur visage possède peu ou pas de détails.</p>
+    <p>Elles ne ressemblent pas à des monstres. Elles ne cherchent pas non plus à reproduire parfaitement l'apparence humaine. À première vue, plusieurs Entités pourraient presque sembler identiques.</p>
+    <p>Cette ressemblance n'est pas accidentelle. Les douze manifestations appartiennent au même phénomène : celui des Veines prenant une forme compréhensible.</p>
+    <p>Une seule chose permet réellement de les différencier. <strong>Chaque Entité possède un signe distinctif lié à sa Veine.</strong> Ce signe reste volontairement discret.</p>
+
+    <table>
+      <thead><tr><th>Veine</th><th>Apparence</th><th>Signe distinctif</th></tr></thead>
+      <tbody>
+        <tr><td>Sang</td><td>Humanoïde très simple</td><td>Une petite marque rouge au niveau du cœur</td></tr>
+        <tr><td>Trône</td><td>Silhouette droite et parfaitement immobile</td><td>Une fine couronne flottant légèrement au-dessus de la tête</td></tr>
+        <tr><td>Regard</td><td>Humanoïde dépourvu de visage</td><td>Un petit œil sur le front</td></tr>
+        <tr><td>Rêve</td><td>Silhouette légèrement floue</td><td>Quelques petites étoiles autour de la tête</td></tr>
+        <tr><td>Tombeau</td><td>Silhouette légèrement penchée</td><td>Une fine fissure traversant une partie du visage</td></tr>
+        <tr><td>Bête</td><td>Humanoïde d'apparence presque normale</td><td>Deux minuscules pointes sur le sommet du crâne</td></tr>
+        <tr><td>Forge</td><td>Silhouette légèrement plus massive</td><td>Une petite marque évoquant une étincelle</td></tr>
+        <tr><td>Marée</td><td>Silhouette aux contours fluides</td><td>Une petite goutte flottant près de l'épaule</td></tr>
+        <tr><td>Racine</td><td>Humanoïde très simple</td><td>Une petite branche émergeant du bras</td></tr>
+        <tr><td>Esprit</td><td>Silhouette légèrement translucide</td><td>Un petit halo derrière la tête</td></tr>
+        <tr><td>Ombre</td><td>Silhouette plus sombre</td><td>Une partie du corps semble lentement se dissiper</td></tr>
+        <tr><td>Chaîne</td><td>Humanoïde très simple</td><td>Un petit anneau autour du poignet</td></tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:2em;">Ces signes ne doivent jamais transformer radicalement leur apparence.</p>
+    <p>L'Entité de la Bête n'est pas une gigantesque créature animale. L'Entité du Tombeau n'est pas un cadavre ambulant. L'Entité de la Forge n'est pas un colosse couvert de flammes.</p>
+    <p>Elles restent toutes des <strong>silhouettes humanoïdes simples et silencieuses</strong>. Leur identité ne devient évidente qu'après quelques secondes d'observation.</p>
+    <div class="example-box ornate">
+      <p class="quote-line">« Ah… celle-là appartient au Regard. »</p>
+    </div>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">IV</span>Lien</div>
+    <h2 class="title">Le Porteur</h2>
+    <p class="lede">Un individu lié à une Veine devient un Porteur.</p>
+    <p>Le Porteur ne devient pas lui-même la Veine. Il devient un point d'ancrage à travers lequel une partie de son pouvoir peut agir dans le monde.</p>
+    <p>La relation peut donc être résumée ainsi :</p>
+
+    <div class="flow-chain">
+      <div class="flow-item">
+        <div class="flabel">Veine</div>
+        <p class="fdesc">La force fondamentale</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-item">
+        <div class="flabel">Entité</div>
+        <p class="fdesc">La forme qu'elle adopte pour entrer en contact avec un individu</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-item">
+        <div class="flabel">Porteur</div>
+        <p class="fdesc">Celui dans lequel son pouvoir s'ancre</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">V</span>Preuve</div>
+    <h2 class="title">La Marque</h2>
+    <p class="lede">Lorsqu'un individu devient Porteur, quelque chose change sur son corps.</p>
+    <p>Le signe distinctif porté par l'Entité apparaît également sur lui. Cette <strong>Marque</strong> constitue la preuve physique du lien entre la Veine et son Porteur.</p>
+    <p>Elle reprend le même symbole que celui présent sur l'Entité, mais son emplacement exact peut légèrement varier selon l'individu.</p>
+    <p>Ainsi, un Porteur du Regard peut développer une petite marque en forme d'œil. Un Porteur du Sang peut voir apparaître une marque rouge près du cœur. Un Porteur de la Chaîne peut porter un anneau sombre autour du poignet.</p>
+    <p>La Marque n'est ni un tatouage ni une cicatrice ordinaire. Elle fait partie du Pacte qui unit désormais le Porteur à sa Veine.</p>
+    <p>Elle crée un lien visuel immédiat :</p>
+
+    <div class="flow-chain">
+      <div class="flow-item">
+        <div class="flabel">Veine</div>
+        <p class="fdesc">Possède son symbole</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-item">
+        <div class="flabel">Entité</div>
+        <p class="fdesc">Le manifeste</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-item">
+        <div class="flabel">Porteur</div>
+        <p class="fdesc">En hérite</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="divider-dot">
+    <div class="kicker"><span class="num">VI</span>Voies d'accès</div>
+    <h2 class="title">Obtenir une Veine</h2>
+    <p class="lede">Il existe plusieurs façons de devenir Porteur. La manière dont la Veine est obtenue influence profondément la rencontre entre l'individu et son Entité.</p>
+    <p>Les principales méthodes connues sont le <strong>Rituel</strong>, le <strong>Pacte</strong> et, beaucoup plus rarement, l'<strong>Émergence naturelle</strong>.</p>
+
+    <div class="sub-divider"></div>
+    <div class="kicker"><span class="num">a</span>Le hasard répond</div>
+    <h3 class="subtitle">Le Rituel</h3>
+    <p>Le Rituel permet à un individu de tenter d'entrer en contact avec les Veines.</p>
+    <p>Cependant, contrairement au Pacte, le candidat ne décide pas réellement de celle qu'il recevra. Il peut posséder certaines affinités. Il peut espérer obtenir une Veine particulière. Il peut même accomplir le Rituel avec une intention précise.</p>
+    <p>Mais au moment décisif, <strong>c'est une Veine qui répond</strong>.</p>
+    <p>Lorsque cela arrive, le candidat se retrouve face à son Entité. À quelques mètres de lui apparaît lentement une silhouette humanoïde astrale. Elle ne réalise presque aucun mouvement. Elle reste simplement face à lui.</p>
+    <p>Puis elle prononce :</p>
+    <div class="example-box ornate">
+      <p class="quote-line">« Je suis la Veine du [Nom]. »</p>
+    </div>
+    <p style="margin-top:2em;">Sa présence signifie une chose simple : <strong>parmi les Veines capables de répondre à cet individu, celle-ci l'a accepté.</strong></p>
+    <p>Si le Rituel arrive à son terme, le pouvoir s'ancre dans le nouveau Porteur. La Marque apparaît alors sur son corps.</p>
+
+    <div class="sub-divider"></div>
+    <div class="kicker"><span class="num">b</span>Le choix assumé</div>
+    <h3 class="subtitle">Le Pacte</h3>
+    <p>Le Pacte fonctionne différemment. Cette fois, l'individu ne laisse pas les Veines décider entièrement. Il cherche volontairement à entrer en contact avec <strong>une Veine précise</strong>.</p>
+    <p>S'il parvient à l'atteindre, son Entité apparaît devant lui. La rencontre reste sobre. Aucune démonstration spectaculaire n'est nécessaire. Aucun discours interminable. L'Entité se tient simplement devant celui qui l'a appelée.</p>
+    <p>Puis elle prononce :</p>
+    <div class="example-box ornate">
+      <p class="quote-line">« Je suis la Veine du [Nom]. »</p>
+    </div>
+    <p style="margin-top:2em;">Mais contrairement au Rituel, sa présence ne signifie pas encore que le pouvoir sera transmis. Car celui qui choisit sa Veine doit également accepter <strong>son prix</strong>.</p>
+
+    <div class="sub-divider"></div>
+    <div class="kicker"><span class="num">c</span>Ce qu'il en coûte</div>
+    <h3 class="subtitle">Le Prix</h3>
+    <p>Une Veine ne conclut pas un Pacte gratuitement. Quelque chose doit être abandonné, perdu ou sacrifié.</p>
+    <p>Cependant, le prix n'est pas une monnaie arbitraire. Il possède généralement un lien avec <strong>la nature de la Veine</strong>, avec <strong>l'individu qui tente de la rejoindre</strong>, ou avec ce qu'il désire obtenir grâce à elle.</p>
+    <p>La Veine peut ainsi réclamer quelque chose dont la perte possède une véritable signification :</p>
+    <ul class="price-tags">
+      <li>Une mémoire</li>
+      <li>Une capacité</li>
+      <li>Une liberté</li>
+      <li>Une relation</li>
+      <li>Une partie du corps</li>
+      <li>Des années de vie</li>
+      <li>Une part de soi</li>
+    </ul>
+    <p>Dans certains cas extrêmes, le prix peut même concerner une autre existence.</p>
+    <p>Deux personnes demandant exactement la même Veine ne recevront donc pas nécessairement la même proposition. Le prix appartient à leur Pacte.</p>
+    <p>Et une fois accepté, il ne constitue pas une simple promesse. <strong>Il est pris.</strong></p>
+    <p>Lorsque le prix est payé, l'Entité transmet le pouvoir. La Marque apparaît. L'individu devient Porteur. Le Pacte est conclu.</p>
+
+    <div class="sub-divider"></div>
+    <div class="kicker"><span class="num">d</span>L'exception</div>
+    <h3 class="subtitle">L'Émergence naturelle</h3>
+    <p>Il existe enfin des cas extrêmement rares dans lesquels une Veine apparaît chez un individu sans Rituel volontaire et sans Pacte recherché. Ce phénomène est appelé <strong>Émergence naturelle</strong>.</p>
+    <p>Ses causes restent difficiles à comprendre.</p>
+    <p>Dans certains cas, l'Entité peut apparaître devant le futur Porteur peu avant l'Émergence. La rencontre peut alors être particulièrement déroutante. Aucun Rituel n'a été accompli. Aucune Veine n'a été appelée. Aucun prix n'a été négocié.</p>
+    <p>Une silhouette apparaît simplement. Elle observe l'individu.</p>
+    <p>Puis elle prononce :</p>
+    <div class="example-box ornate">
+      <p class="quote-line">« Je suis la Veine du [Nom]. »</p>
+    </div>
+    <p style="margin-top:2em; font-style:italic;">Et parfois, cela suffit.</p>
+  </section>
+
+  <section>
+    <div class="kicker"><span class="num">✦</span>Psychologie</div>
+    <h2 class="title">Nature des Entités</h2>
+    <p class="lede">Les Entités parlent peu. Leur silence fait partie de leur nature.</p>
+    <p>Elles ne discutent pas comme des humains et ne cherchent pas nécessairement à expliquer leurs intentions. Elles peuvent répondre lorsqu'une situation l'exige, notamment pendant un Pacte, mais leurs paroles restent généralement simples et précises.</p>
+    <p>Il est également difficile de déterminer si une Entité possède une personnalité au sens humain. Certaines semblent plus froides. D'autres plus patientes. Certaines donnent l'impression d'observer. D'autres d'attendre.</p>
+    <p>Mais il reste impossible de savoir si ces comportements appartiennent réellement aux Veines ou si l'esprit humain tente simplement de donner une personnalité à quelque chose qu'il n'est pas capable de comprendre entièrement.</p>
+    <p>Une chose est certaine :</p>
+
+    <div class="example-box ornate">
+      <p style="margin:0 0 0.8em;"><strong>Lorsqu'une Entité apparaît, une Veine est présente.</strong></p>
+      <p style="margin:0;">Et lorsqu'elle tend son pouvoir à quelqu'un, rien ne redevient exactement comme avant.</p>
+    </div>
+  </section>
+
+  <footer>Codex du Monde — document de travail</footer>
+</main>
+
+<script src="../app.js"></script>
+</body>
+</html>
