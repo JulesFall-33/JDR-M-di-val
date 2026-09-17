@@ -1,0 +1,59 @@
+/* ---------- RECHERCHE (composant partagé, toutes les pages) ---------- */
+.search-wrap{ position:relative; margin-left:auto; }
+.nav-links + .search-wrap{ margin-left:0; }
+
+.nav-search{
+  background:none; border:1px solid var(--line-strong);
+  color:var(--parchment-dim);
+  width:2.4em; height:2.4em; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer;
+  transition:border-color .2s ease, color .2s ease;
+}
+.nav-search:hover, .nav-search.active{ border-color:var(--blood); color:var(--parchment); }
+
+.search-panel{
+  position:absolute; top:calc(100% + 14px); right:0;
+  width:340px; max-width:88vw;
+  background:linear-gradient(160deg, var(--ink-3), var(--ink-2));
+  border:1px solid var(--line-strong);
+  box-shadow:0 24px 60px rgba(0,0,0,0.55);
+  padding:1em;
+  opacity:0; visibility:hidden; transform:translateY(-8px);
+  transition:opacity .18s ease, transform .18s ease, visibility .18s;
+  z-index:30;
+}
+.search-panel.open{ opacity:1; visibility:visible; transform:translateY(0); }
+.search-panel input{
+  width:100%; box-sizing:border-box;
+  background:var(--ink); border:1px solid var(--line-strong);
+  color:var(--parchment);
+  font-family:"EB Garamond", serif; font-size:0.95em; font-style:italic;
+  padding:0.7em 0.9em;
+  outline:none;
+}
+.search-panel input:focus{ border-color:var(--bronze-dim); }
+.search-panel input::placeholder{ color:var(--parchment-faint); }
+.search-results{ margin-top:0.7em; max-height:340px; overflow-y:auto; }
+.search-item{
+  display:flex; flex-direction:column; gap:0.15em;
+  padding:0.7em 0.8em;
+  border-bottom:1px solid var(--line);
+  cursor:pointer;
+  transition:background .15s ease;
+}
+.search-item:last-child{ border-bottom:none; }
+.search-item:hover, .search-item.sel{ background:rgba(222,210,171,0.06); }
+.search-item .sr-name{
+  font-family:"Cinzel"; font-size:0.88em; letter-spacing:0.02em; color:var(--parchment);
+}
+.search-item .sr-path{
+  font-size:0.75em; color:var(--parchment-faint); font-style:italic;
+}
+.search-empty, .search-hint{
+  padding:0.9em 0.4em; text-align:center;
+  font-size:0.82em; color:var(--parchment-faint); font-style:italic;
+}
+@media (max-width:600px){
+  .search-panel{ width:calc(100vw - 2em); right:-0.5em; }
+}

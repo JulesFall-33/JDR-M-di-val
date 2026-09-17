@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cinzel+Decorative:wght@700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../CSS/Esprit.css">
+<link rel="stylesheet" href="../CSS/search.css">
 </head>
 <body>
 <canvas id="embers"></canvas>
@@ -20,6 +21,15 @@
   <a class="brand" href="../index.html">Nocthémar</a>
   <span class="brand-sub">Codex de l'univers JDR</span>
   <span class="crumb">/ <a href="../categories/Pouvoirs.html" style="color:inherit;">Pouvoirs</a> / <a href="../categories/Les_Veines.html" style="color:inherit;">Les Veines</a> / <span class="cur">Esprit</span></span>
+  <div class="search-wrap">
+    <button class="nav-search" id="searchToggle" aria-label="Rechercher">
+      <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </button>
+    <div class="search-panel" id="searchPanel">
+      <input type="text" id="searchInput" placeholder="Rechercher dans le Codex…" autocomplete="off">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
   <a class="back" href="../categories/Les_Veines.html">← Les Veines</a>
 </header>
 
