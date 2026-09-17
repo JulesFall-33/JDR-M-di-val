@@ -340,7 +340,6 @@ h3.subtitle{
   background-size:cover;
   background-position:center 30%;
   background-attachment:fixed;
-  filter:saturate(0.78) contrast(1.1) brightness(0.7) sepia(0.06);
   z-index:-2;
 }
 .page-scrim{
@@ -359,9 +358,7 @@ h3.subtitle{
 /* semi-opaque panel so text/tiles stay legible over the photo lower on the page */
 .content-panel{
   position:relative;
-  background:rgba(19,16,16,0.84);
-  backdrop-filter:blur(7px);
-  -webkit-backdrop-filter:blur(7px);
+  background:rgba(19,16,16,0.94);
 }
 
 /* ---------- HERO PHOTO (hub) ---------- */
@@ -482,7 +479,7 @@ h3.subtitle{
   text-shadow:0 1px 5px rgba(0,0,0,0.95), 0 0 10px rgba(0,0,0,0.75);
 }
 .cat-tile.ready:hover .status{ letter-spacing:0.14em; }
-.cat-tile.ready .status{ color:var(--blood); }
+.cat-tile.ready .status{ color:var(--tile-color, var(--frost)); }
 .cat-tile.empty .status{ color:var(--parchment-faint); }
 .cat-tile.ready .name::after{
   content:""; position:absolute; top:10px; right:10px;
@@ -786,8 +783,6 @@ a.pbadge:hover{ border-color:currentColor; }
   --frost:#8fb8c9;
   --frost-dim:#4c6b76;
 }
-.cat-tile.cartes.ready .status{ color:var(--frost); }
-
 /* ---------- CARTES — PAYS DU MONDE ---------- */
 .pays-list{ margin-top:2.8em; }
 .pays-card{
