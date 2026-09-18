@@ -432,8 +432,8 @@ tr:hover td{background:rgba(222,210,171,0.02);}
 }
 .cat-tile{
   display:block;
-  aspect-ratio:var(--tile-ratio, 4.3/1);
-  background-color:transparent;
+  aspect-ratio:var(--tile-ratio, 3.7/1);
+  background-color:var(--ink-2);
   cursor:pointer;
   text-align:center;
   color:var(--parchment);
@@ -475,16 +475,6 @@ tr:hover td{background:rgba(222,210,171,0.02);}
 .cat-tile.ready:hover .status{ letter-spacing:0.16em; }
 .cat-tile.ready .status{ color:var(--tile-color, var(--bronze)); }
 .cat-tile.empty .status{ color:var(--parchment-faint); }
-.cat-tile.ready .cur-dot{
-  position:absolute; z-index:2; top:12px; right:12px;
-  width:6px; height:6px; border-radius:50%;
-  background:var(--blood); box-shadow:0 0 8px var(--blood);
-  animation:pulseDot 2.4s ease-in-out infinite;
-}
-@keyframes pulseDot{
-  0%,100%{ opacity:0.7; box-shadow:0 0 6px var(--blood); }
-  50%{ opacity:1; box-shadow:0 0 14px var(--blood); }
-}
 @media (max-width:900px){
   .hub-grid{grid-template-columns:repeat(2, 1fr);}
 }
