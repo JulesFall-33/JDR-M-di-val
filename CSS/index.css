@@ -426,55 +426,57 @@ tr:hover td{background:rgba(222,210,171,0.02);}
    kept legible with drop-shadow/text-shadow instead of a background block. */
 .hub-grid{
   display:grid;
-  grid-template-columns:repeat(2, 1fr);
-  gap:1.2em;
+  grid-template-columns:repeat(3, 1fr);
+  align-items:start;
+  gap:1.5cm;
 }
 .cat-tile{
-  background-color:var(--ink-2);
-  aspect-ratio:4.5 / 1;
-  display:grid;
-  grid-template-columns:1fr;
-  grid-template-rows:1fr 1fr;
-  align-items:center;
-  padding:0 1.3em;
+  display:block;
+  aspect-ratio:var(--tile-ratio, 4.3/1);
+  background-color:transparent;
   cursor:pointer;
-  border:1px solid var(--line);
-  text-align:left;
+  text-align:center;
   color:var(--parchment);
   position:relative;
   overflow:hidden;
-  transition:transform .25s ease, box-shadow .25s ease;
+  transition:transform .3s ease, box-shadow .3s ease;
   font-family:"EB Garamond", serif;
 }
 .cat-tile:hover{
-  transform:translateY(-3px);
-  box-shadow:0 10px 26px rgba(0,0,0,0.45);
+  transform:translateY(-4px);
+  box-shadow:0 14px 34px rgba(0,0,0,0.5);
+}
+.cat-tile.ready:hover{
+  box-shadow:0 14px 34px rgba(0,0,0,0.5), 0 0 26px -6px var(--tile-color, transparent);
 }
 .cat-tile .tile-img{
   position:absolute; inset:0; z-index:0;
   width:100%; height:100%;
   object-fit:contain; object-position:center;
+  transition:filter .3s ease;
   pointer-events:none;
 }
-.cat-tile .name{
-  grid-column:1; grid-row:1; align-self:end;
-  position:relative; z-index:2;
-  font-family:"Cinzel", serif; font-size:1.05em; letter-spacing:0.02em; line-height:1.2;
-  text-shadow:0 2px 6px rgba(0,0,0,0.95), 0 0 14px rgba(0,0,0,0.8);
+.cat-tile .tile-label{
+  position:absolute; z-index:2; left:50%; top:var(--label-y, 50%);
+  transform:translate(-50%, -50%);
+  display:flex; flex-direction:column; align-items:center;
+  background:rgba(10,8,7,0.42);
+  backdrop-filter:blur(2px);
+  border-radius:5px;
+  padding:0.4em 1.1em;
+  white-space:nowrap;
 }
 .cat-tile .status{
-  grid-column:1; grid-row:2; align-self:start;
-  position:relative; z-index:2;
-  margin-top:0.25em;
-  font-family:"Cinzel"; font-size:0.65em; letter-spacing:0.08em;
+  line-height:1.2;
+  font-family:"Cinzel"; font-size:0.56em; letter-spacing:0.08em;
   transition:letter-spacing .2s ease;
-  text-shadow:0 1px 5px rgba(0,0,0,0.95), 0 0 10px rgba(0,0,0,0.75);
+  text-shadow:0 1px 2px rgba(0,0,0,0.85);
 }
-.cat-tile.ready:hover .status{ letter-spacing:0.14em; }
-.cat-tile.ready .status{ color:var(--tile-color, var(--frost)); }
+.cat-tile.ready:hover .status{ letter-spacing:0.16em; }
+.cat-tile.ready .status{ color:var(--tile-color, var(--bronze)); }
 .cat-tile.empty .status{ color:var(--parchment-faint); }
-.cat-tile.ready .name::after{
-  content:""; position:absolute; top:10px; right:10px;
+.cat-tile.ready .cur-dot{
+  position:absolute; z-index:2; top:12px; right:12px;
   width:6px; height:6px; border-radius:50%;
   background:var(--blood); box-shadow:0 0 8px var(--blood);
   animation:pulseDot 2.4s ease-in-out infinite;
@@ -482,6 +484,9 @@ tr:hover td{background:rgba(222,210,171,0.02);}
 @keyframes pulseDot{
   0%,100%{ opacity:0.7; box-shadow:0 0 6px var(--blood); }
   50%{ opacity:1; box-shadow:0 0 14px var(--blood); }
+}
+@media (max-width:900px){
+  .hub-grid{grid-template-columns:repeat(2, 1fr);}
 }
 @media (max-width:560px){
   .hub-grid{grid-template-columns:1fr;}
